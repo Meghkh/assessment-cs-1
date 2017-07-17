@@ -76,12 +76,7 @@ class Stack(object):
             3
         """
 
-        counter = 0
-
-        for item in self._list:
-            counter += 1
-
-        return counter
+        return len(self._list)
 
     def empty(self):
         """Empty stack::
@@ -119,10 +114,7 @@ class Stack(object):
             False
         """
 
-        if self._list:
-            return False
-        else:
-            return True
+        return not self._list
 
 if __name__ == "__main__":
     import doctest
