@@ -1,0 +1,16 @@
+Discussion Questions
+
+Runtime:
+
+1) The workload is the number of animal crackers in the box. You must check all
+    of them to determine whether or not an elephant exists. Doubling the load
+    doubles the time needed to complete the work.
+
+2)
+    O(1)            fastest
+    O(logn)
+    O(n)
+    O(nlogn)
+    O(n^2)
+    O(2^n)          slowest
+
