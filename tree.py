@@ -26,9 +26,12 @@ class Node(object):
             2
         """
 
-        # FIXME
+        counter = 0
+        current = self
+        for child in current.children:
+            counter += 1
 
-        pass
+        return counter
 
 
 class Tree(object):
@@ -93,8 +96,15 @@ class Tree(object):
 
         """
 
-        # FIXME
-        pass
+        to_visit = [self.root]
+
+        while to_visit:
+            current = to_visit.pop(0)
+
+            if current.data == data:
+                return current
+
+            to_visit.extend(current.children)
 
 if __name__ == "__main__":
     import doctest
@@ -104,4 +114,3 @@ if __name__ == "__main__":
     if not result.failed:
         print "ALL TESTS PASSED. GOOD WORK!"
     print
-
