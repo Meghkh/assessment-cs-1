@@ -1,5 +1,7 @@
 Discussion Questions
 
+
+
 Runtime:
 
 1) The workload is the number of animal crackers in the box. You must check all
@@ -14,3 +16,82 @@ Runtime:
     O(n^2)
     O(2^n)          slowest
 
+
+
+
+Stacks and Queues:
+
+1.1) Stack - pallets are not unique so there is no reason to require the first one
+    in to be the last one out as any will do.
+
+1.2) Queue - beer is carbonated and must be sealed to retain the carbonation, so
+    it cannot wait. Beers should be capped in the order they are carbonated so
+    that the oldest ones aren't waiting to be capped while they fizzle out.
+
+1.3) Stack - can help keep parenthesis balanced and retain order of operations,
+    whereas a queue wouldn't be able to account for order of operations.
+
+2.1) Any line - bathroom, airport security, ordering food, printing
+
+2.2) Any inventory - grocery store, or any food related inventory especially
+
+3.1) Function call stack, browser back/forward stacks or the undo/redo buttons
+
+3.2) Company layoffs - this is a little bit of a stretch, but obviously my boss
+    went in before me and I came out before him
+
+
+
+
+Linked Lists:
+
+1) The nodes are the complete boxes (LLIST/head, "Apple"/next, "Berry"/next,
+    "Cherry"/next). The data for the apple node is the string "Apple", the data
+    for the berry node is the string "Berry"and the data for the cherry node is
+    the string "Cherry". The first node is the head, the node with LLIST and
+    head. The tail would be the node with "Cherry"/next, although it is only a
+    tail in context as it's not actually defined as a tail, but it is the last element in the list and it's next attribute points to None.
+
+2) A doubly-linked list would require the use of nodes that have a previous
+    attribute on them, as well as a data and a next attribute, so that it can
+    retain a reference to the node that precedes it as well as to the node that
+    follows it.
+
+3) To append to a linked list, you must add a node at the end of the list. With
+    a linked list, this means you must still traverse through the entire list,
+    but if you keep track of the tail, the reference to the tail can be used to
+    append an element directly instead of needing to find the end of the entire
+    list to identify the tail.
+
+
+
+Trees:
+
+1)  food
+    Italian
+    Indian
+    Mexican
+    lasagna
+    pizza
+    tikka masala
+    saag
+    burritos
+
+2)  food
+    Mexican
+    enchiladas
+    tacos
+    burritos
+    Indian
+    saag
+    tikka masala
+    Italian
+    pizza
+    Sicilian
+    New York-style
+    Chicago-style
+
+3) A binary search tree is different than other trees in that the elements must
+    either have a natural order or they must be given order, so that any nodes
+    to the left of the root node will be of lower order than the root and any
+    node to the right of the root node will be of higher order than the root.
